@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lobster&family=Sail&family=UnifrakturMaguntia&display=swap');
+body {
+    background-image: url(./Guerreros/FondoEpico.jpg);
+    font-family: 'Lobster', cursive;
+}
+
+#Seleccionar-guerrero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eslogan {
+    color: #D72323;
+    width: 667px;
+    height: 60px;
+    font-size: 60px;
+}
+
+.subtitulo {
+    color: #F5EDED;
+    font-size: 24px;
+    font-family: 'Sail', cursive
+}
+
+.tarjetas {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta-guerrero {
+    height: 150px;
+    width: 140px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #E6DEDD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.tarjeta-guerrero img {
+    width: 90px;
+    height: 80px;
+}
+
+#boton-guerrero {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+input{
+    display: none; 
+}
+
+input:checked + label {
+    background-color: #D72323;
+}
+
+#Seleccionar-arremetida{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-arremetida {
+    background-color: #F5EDED;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    border-color: transparent;
+    font-family: 'Lobster', cursive;
+}
+
+#avisos {
+    width: 180px;
+    background: #D72323;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiterar {
+    border: none;
+    color: #A93226;
+    font-family: 'Lobster', cursive;
+}
+
+.arremetidas {
+    color: white;
+    display: grid;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+}
+
+.arremetidas-Jugador, .arremetidas-Enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#existencias-jugador, #existencias-enemigo {
+    color: #D72323;
+        
+}
+
+#contemplar-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa {
+    border: 2px solid white;
+}
+
+.mensaje-mapa {
+    color: #D72323;
+    width: 1300px;
+    height: 90px;
+    font-size: 45px;
+}
+
+@media (max-width: 360px) {
+    .eslogan {
+        color: #D72323;
+        width: 330px;
+        height: 104px;
+        font-size: 60px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        font-family: 'Sail', cursive;
+        color: #F5EDED;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+}

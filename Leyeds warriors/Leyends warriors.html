@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>Leyends of warriors</title>
+        <link rel="stylesheet" href="./Styles.css">
+    </head>
+    <body>
+        <section id="Seleccionar-guerrero">    
+            <h1 class="eslogan">⚔️¡Leyends of warriors!⚔️</h1>
+            <h2 class="subtitulo">Opta por el guerrero de tu preferencia:</h2>
+            <div id="contenedorTarjetas" class="tarjetas"></div>
+            <button id="boton-guerrero">Poseer</button>
+        </section>
+
+        <section id="contemplar-mapa">
+            <h1 class="mensaje-mapa">Recorre estrategicamente el campo de batalla, los enemigos están al acecho</h1>
+            <canvas id="mapa"></canvas>
+
+                <button onmouseup="pararMovimiento()" onmousedown="desplazarArriba()">⏫</button>
+                <button onmouseup="pararMovimiento()" onmousedown="desplazarIzquierda()">⏪</button>
+                <button onmouseup="pararMovimiento()" onmousedown="desplazarAbajo()">⏬</button>
+                <button onmouseup="pararMovimiento()" onmousedown="desplazarDerecha()">⏩</button>
+        </section>
+
+        <section id="Seleccionar-arremetida">
+            <h1 class="eslogan">⚔️¡Leyends of warriors!⚔️</h1>
+
+            <h2 class="subtitulo">Opta por la arremetida de tu preferencia:</h2>
+
+            <div id="contenedorArremetidas" class="tarjetas-arremetidas"></div>
+
+            <div>
+
+            <div id="avisos">
+                <p id="productoBatalla">¡Lucha con honor caballero!</p>
+
+                <section id="reiterar">
+                    <button id="boton-reiterar">¡Vuelve a luchar!</button>
+                </section>
+            </div>
+            
+            </div>
+
+            <div class="arremetidas">
+                <div class="arremetidas-Jugador">
+                    <p id="existencias-jugador">0</p>
+                    <p id="guerrero-jugador"></p>
+                    <div id="Producto-Arremetida-Jugador"></div>
+                </div>
+                <div class="arremetidas-Enemigo">
+                    <p id="existencias-">0</p>
+                    <p id="guerrero-enemigo"></p>
+                    <div id="Producto-Arremetida-Enemigor"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./Js/Leyends of warriors.js"></script>
+    </body>
+</html>
